@@ -1,0 +1,99 @@
+//section one
+
+.section1{
+	margin: @margin;
+	background-color: @backgroundChange;
+	color: @fontChange;
+	border-radius: @borderBox;
+	padding: 20px;
+	font-size: 2rem;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	
+	button{
+		font-size: 2rem;
+		padding: 10px 25px;
+		border-radius: 6px;
+		background: darkgrey;
+		border: 2px solid black;
+	}
+
+	button:hover{
+		background-color: white;
+		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	}
+}
+
+@media(max-width:800px){
+	.section1{
+		.flexBox(column, center, center);
+	}
+}
+
+//section main: Background info
+
+.sectionMain{
+	font-size: 2rem;
+	// margin: @margin;
+	padding: 20px;
+	color: @fontChange;
+	background-color: @backgroundChange;
+	border-radius: @borderBox;
+	display:flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	justify-items: flex-start;
+
+	div{
+		padding: 5rem 4rem;
+	}
+
+	.controlDiv{
+		max-width: 900px;
+	
+	}
+}
+
+@media(max-width:800px){
+	.sectionMain{
+		.flexBox(column, center, flex-start);
+	}
+}
+
+//section two: Work History
+
+.section2{
+	margin:  @margin;
+	padding: 2rem;
+	color: @fontChange;
+	background-color: @backgroundChange;
+	border-radius: @borderBox;
+	font-size: 2rem;
+	height: 450px;
+	// display: flex;
+	// flex-flow: column;
+	// justify-content: space-between;
+
+	table{
+		height: 300px;
+		width: 97%;
+
+		tr{
+			width:95%;
+			margin: @margin;
+			display: flex;
+			justify-content: space-between;
+			justify-items: flex-start;
+			// align-content: space-around;
+			align-items: flex-start;
+		}
+	}	
+}
+
+@media(max-width:800px){
+	.section1{
+		.flexBox(column, center, center);
+	}
+}
+
